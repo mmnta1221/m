@@ -11,8 +11,8 @@ body{
 .block1{
     width: 500px;
     height: 500px;
-    background: linear-gradient(to left, #E0C3FC 0%, #8EC5FC 100%);
-    border-radius: 2em;
+    background: radial-gradient(47.95% 47.95% at 50% 52.05%, #14C4CA 0%, #12B0FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 15em;
     box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.651);
 }
 .block2{
