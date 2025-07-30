@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(247, 230, 186);
+    text-align: center
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+p{
+  font-family: "Lilita One", sans-serif, 'Raleway';
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(136, 77, 0);
+}
+@font-face {
+    font-family: 'a';
+    src: url('C:\Users\user\Desktop\pr1\работа со шрифтами\BitcountSingle_Cursive-Bold.ttf');
+}
+h1{
+    font-family: 'a', 'Lilita One';
+    color: rgb(99, 56, 0);
+}
