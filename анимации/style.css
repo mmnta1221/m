@@ -1,0 +1,103 @@
+body{
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 500px 200px;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.block1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(124, 8, 0);
+    animation: rotate 5s infinite;
+    
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg); 
+    }
+    to{
+        transform: rotate(340deg); /*переворачивает элемент на 340 градусов*/
+    }
+
+}
+.block2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 23, 124);
+    animation: scale 5s infinite;
+
+   
+}
+@keyframes scale{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.5); /*уменьшает размер элемента в 2 раза*/
+    }
+}
+ 
+.block3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 117, 25);
+    animation: translate 5s infinite;
+}
+@keyframes translate{
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(100px, 20px); /*меняет координаты элемента*/
+    }
+}
+.block4{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(116, 1, 139);
+    animation: skew 5s infinite;
+}
+@keyframes skew{
+    from{
+        transform: skew(0deg);
+    }
+    to{
+        transform: skew(50deg); /*наклоняет элемент на 50 градусов*/
+    }
+}
+.block5{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(43, 159, 226);
+    transition: background-color 1s;
+    animation: rotate 5s infinite;
+    
+}
+.block5:hover{
+    background-color: rgb(0, 76, 121); /*при наведении меняет цвет элемента*/
+    
+}
+.block6{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(227, 169, 250);
+    animation: colorChange 15s infinite;
+}
+@keyframes colorChange{
+    0%{
+        background-color: rgb(230, 200, 255); /*изменяет цвет и размер элемента*/
+        transform: scale(1);
+    }
+    10%{
+        background-color: rgb(224, 120, 245);
+    }
+    50%{
+        background-color: rgb(162, 3, 194);
+    }
+    100%{
+        background-color: rgb(226, 43, 226);
+        transform: scale(1.5);
+    }
+}
