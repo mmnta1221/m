@@ -1,0 +1,44 @@
+body{
+    background-color: aliceblue;
+}
+.after::after{
+    content: "Текст, добавленный после заголовка";
+    color: rgb(148, 3, 3);
+    font-size: 15px;
+    display: block;
+}
+.before::before{
+    content: "Текст, добавленный до абзаца";
+    color: rgb(148, 3, 3);
+    font-size: 15px;
+    display: block;
+    
+}
+.con{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.block1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 46, 173);
+    position: relative;
+}
+
+.block1::before{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    display: block;
+    height: 66px;
+    width: 200px;
+}
+.block1::after{
+    content: "";
+    background-color: rgb(255, 0, 0);
+    display: block;
+    height: 66px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+}
