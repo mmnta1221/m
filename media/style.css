@@ -1,0 +1,256 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 1920px;
+
+}
+header{
+    padding: 20px;
+    background-color: #E1EDE6;
+    width: 1920px;
+    
+    font-size: 20px;
+
+
+}
+.burger{
+    display: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 160px;
+    height: 33px;
+}
+.menu{
+    display: flex;
+    grid-auto-flow: 40px;
+    list-style-type: none;
+    gap: 100px;
+
+}
+.cart{
+    width: 200px;
+}
+.menu a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+}
+span{
+
+    color: #598D66;
+}
+.first_section{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 165px  ;
+}
+.first_section img{
+    width: 540px;
+    height: 721px;
+    rotate: y 180deg;
+
+}
+
+.text1 h1{
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0;
+}
+.text1 p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #86928B;
+    margin-top: -30px;
+
+}
+.text1{
+    width: 540px;
+    height: 331px;
+    
+    margin-right: 165px;
+    margin-top: 145px;
+}
+.text1 button{
+    width: 225px;
+    height: 65px;
+    border: 1px solid #598D66;
+    background-color: rgb(255, 255, 255);
+    color: #598D66;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    margin-top: 60px;
+}
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        align-items: center;
+        width: 768px;
+        height: fit-content;
+    }
+    .menu{
+
+        gap: 60px;
+    }
+    .menu a{
+        font-size: 18px;
+    }
+    .first_section img {
+        width: 330px;
+        height: 380px;
+    }
+    .text1{
+        margin-top: 35px;
+        margin-left: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        
+
+    }
+    .cart{
+        margin-right: -100px;
+    }
+    .first_section{
+        padding: 0 39px;
+        height: 1000px;
+        width: 768px;
+    }
+    .text1 h1{
+        font-size: 40px;
+        width: 330px;
+    }
+    .text1 p{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .first_section button{
+        margin-top: 40px;
+        
+        width: 210px;
+        height: 60px;
+    }
+}
+@media (max-width:576px) {
+    header{
+        width: 576px;
+        height: fit-content;
+        padding: 0;
+
+        font-size:16px ;
+    }
+    .first_section img{
+        width: 195px;
+        height: 331px;
+        margin-top: 50px;
+    }
+    .first_section h1{
+        font-size: 36px ;
+        width: 285px;
+    }
+    .logo::after{
+        content: "";
+        width: 510px;
+        height: 1px;
+        background-color: #C3D1C6;
+        display: block;
+        margin-left: -210px;
+    }
+    .logo{
+
+        margin-left: 217px;
+        margin-right: 216px;
+        
+
+    }
+    .first_section p{
+        font-size: 16px;
+        width: 285px;
+        margin-top: -10px;
+    }
+    .first_section button{
+        width: 178px;
+        height: 50px;
+        font-size: 18px;
+        margin-top: -10px;
+    }
+   .menu{
+        width: 576px;
+        position: relative;
+        clear: both;
+
+   }
+   nav{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   }
+    
+}
+@media (max-width: 320px) {
+    .first_section{
+        padding: 0;
+    }
+    .first_section img{
+        display: none;
+    }
+
+    .text1{
+        margin: 0;
+        margin-right: 1000px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .text1 h1{
+        width: 320px;
+        font-size: 30px;
+    }
+    .text1 p{
+        margin-top: -40px;
+        width: 320px;
+        font-size: 14px;
+    }
+    .first_section button{
+        width: 154px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .logo{
+        display: flex;
+        margin-left: 88.5px;
+        background-color: white;
+        width: 320px;
+        height: 68px;
+
+    }
+    nav{
+        background-color: #fdfdfd;
+    }
+    ul{
+        background-color:#D4E8D9;
+        height: 62px;
+        align-items: center;
+        padding: 0px 26px;
+    }
+    li{
+        display: none;
+    }
+    .burger{
+        width: 30px;
+        height: 30px;
+        display: inline;
+    }
+    .cart{
+        display: block;
+        margin-left: 169px;
+        
+      
+    }
+}
