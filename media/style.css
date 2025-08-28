@@ -230,6 +230,9 @@ span{
         height: 68px;
 
     }
+    .menu{
+        margin: 0;
+    }
     nav{
         background-color: #fdfdfd;
     }
@@ -252,5 +255,8 @@ span{
         margin-left: 169px;
         
       
+    }
+    .logo::after{
+        display: none;
     }
 }
