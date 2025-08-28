@@ -17,16 +17,16 @@ console.log(age)
 
 let number = 10
 let str = "word"
-let boolean = true
+let r = true;
 let smth = null
 let not_A_number = NaN
 let thing = undefined
-console.log(number)
-console.log(str)
-console.log(boolean)
-console.log(smth)
-console.log(not_A_number)
-console.log(thing)
+console.log(typeof number + " " + number)
+console.log(typeof str  + " " + str)
+console.log(typeof r  + " " + r)
+console.log(typeof smth +" " + smth)
+console.log(typeof not_A_number  + " " + (not_A_number))
+console.log(typeof thing  + " " + thing)
 
 //zadanie 4 
 let str2 = "100"
@@ -41,7 +41,13 @@ console.log(undef_to_str)
 console.log(NaN_to_num)
 
 //zadanie 5
+let num2 = 90
+console.log(num2)
+let numToStr = String(num2)
+console.log(numToStr)
+// динамическая типизация это свойство, которое позволяет переменной поменять свой тип данных в процессе выполнения программы
 
+//zadanie 6
 user_name = prompt("Напишите ваше имя")
 console.log(user_name)
 user_age = prompt("Напишите ваш возраст")
