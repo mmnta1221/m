@@ -59,8 +59,8 @@ switch(day){
 console.log(message)
 
 //zadanie 6
-let num1 = prompt("Первое число")
-let num2 = prompt("Второе число")
+let num1 = Number(prompt("Первое число"))
+let num2 = Number(prompt("Второе число"))
 let comparison = (num1==num2)? "они равны": (num2 > num1)? "второе число больше": "первое число большe";
 console.log(comparison)
 
@@ -70,22 +70,22 @@ let message1
 switch(month){
     case "1":
     case "2":
-    case "3":
+    case "12":
         message1 = "Зима"
         break
+    case "3":
     case "4":
     case "5":
-    case "6":
         message1 = "Весна"
         break
+    case "6":
     case "7":
     case "8":
-    case "9":
         message1 = "Лето"
         break
+    case "9":
     case "10":
     case "11":
-    case "12":
         message1 = "Осень"
         break
 
