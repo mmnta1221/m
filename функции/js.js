@@ -1,55 +1,71 @@
 function greet(){
-    console.log("Hello world!")
+    world = ("Hello world!")
+    return world
 }
-greet()
+console.log(greet())
 
 //zadanie 2
 function sayHello(name){
-    console.log("Привет" + " "+ name)
+    let hello = ("Привет" + " "+ name)
+    return hello
 
 }
-sayHello("Asya")
-sayHello("Masha")
-sayHello("Vitya")
+console.log(sayHello("Asya"))
+console.log(sayHello("Masha"))
+console.log(sayHello("Vitya"))
 
 //zadanie 3
 function sum(num1, num2){
-    console.log(num1 + num2)
+    let summ = (num1 + num2)
+    return summ
 }
-sum(1, 2)
+console.log(sum(1, 2))
 
 //zadanie 4
 function isEven(num){
+    let console
     if ((num%2)== 0){
-        console.log("even")
+        console = ("even")
+        return console
     }else{
-        console.log("not even")
+        console = ("not even")
+        return console
 
     }
 }
-isEven(5)
+console.log(isEven(5))
 
 //zadanie 5
 function max(number1, number2){
 
     let comparison = (number1==number2)? "они равны": (number2 > number1)? "второе число больше": "первое число большe";
-    console.log(comparison)
+    return comparison
 
 
 }
-max(10, 10)
+console.log(max(10, 10))
 
 //zadanie 6
 function getInitials(firstName, SecondName ){
-    console.log(firstName[0] +"."+ SecondName[0])
+    console2 = (firstName[0] +"."+ SecondName[0])
+    return console2
 }
-getInitials("Alina", "Kabanova")
+console.log(getInitials("Alina", "Kabanova"))
 
 //zadanie 7
 function square(number){
-    console.log(number**2)
+
+    let sq = number**2
+    return sq
 }
-square(9)
+function cube(number){
+    let cb =  number * square(number)
+    return cb
+
+}
+
+console.log(square(9))
+console.log(cube(9))
 
 //zadanie 8
 const sum2 = (numm1, numm2) => numm2+ numm1
