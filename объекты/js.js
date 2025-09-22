@@ -1,7 +1,11 @@
 let person = {
     age:10,
     name: "John",
-    city: "New-York"
+    city: "New-York",
+    greet(){
+        message = "Привет, меня зовут" + " "+ this.name + " "+ "мне" + " " +this.age +"" + "лет!";
+        return message
+    }
 
 }
 console.log(person)
@@ -13,8 +17,8 @@ person.city = "Almaty";
 console.log(person.city)
 
 //zadanie 3
-person.greet = "Привет, меня зовут" + " "+ person.name + " "+ "мне" + " " + person.age +"" + "лет!"
-console.log(person.greet)
+
+console.log(person.greet())
 
 //zadanie 4
 let obj1 = {
@@ -48,9 +52,13 @@ let calculator = {
     b: 11,
     sum(){
         return this.a+ this.b
+    },
+    multiply(){
+        return this.a * this.b
     }
 }
 console.log(calculator.sum())
+console.log(calculator.multiply())
 
 //zadanie 7
 const car = {
