@@ -35,8 +35,8 @@ list.addEventListener("click", (event)=>{
 
 //zadanie 7
 const input2 = document.getElementById("keyboardInput")
-input2.addEventListener("keydown", () =>{
-   console.log(event,key)
+input2.addEventListener("keydown", (event) =>{
+   console.log(event.key)
 }
 
 )
