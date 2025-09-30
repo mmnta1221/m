@@ -28,8 +28,6 @@ do{
 //zadanie 4
 while(true){
     let user = prompt("напишите число")
-    console.log(num)
-    num++
     if(user ==10){
         break
     }
@@ -46,9 +44,13 @@ for (let u = 0; u < numbers.length; u++){
 }
 
 //zadanie 6
-for(let numq = 0; numq <=100; numq++ ){
-    console.log(numq)
+for (;;) {
+  console.log(g); 
+  g++
 
+  if (g > 100) {
+    break; 
+  }
 }
 
 
