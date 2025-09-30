@@ -8,7 +8,7 @@ for( let i =0; i< color.length ; i++){
 }
 
 //zadanie 3
-let text = document.querySelector('#message')
+let text = document.querySelector('#text')
 text.textContent = "wow"
 
 let form = document.querySelectorAll('.box')
