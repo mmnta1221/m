@@ -13,25 +13,34 @@ const user = {
 }
 const userInfo = JSON.stringify(user)
 localStorage.setItem('user', userInfo)
-const store = localStorage.getItem(user)
+const store = localStorage.getItem("userInfo")
 const parsed = JSON.parse(store)
 console.log(parsed)
 
 //zadanie 4 
-user.country = "Kazakhstan"
-const UserInfo = JSON.stringify(user)
+let user1 = localStorage.getItem("user")
+user1 = JSON.parse(user1)
+user1.country = "Kazakhstan"
+const UserInfo = JSON.stringify(user1)
 localStorage.setItem('user', UserInfo)
 console.log(localStorage.getItem("user"))
 
 //zadanie 5
-if (user.birthday){
-    console.log(user.birthday)
+const newUser = localStorage.getItem("userInfo")
+if (newUser){
+    const user2 = JSON.parse(newUser)
+    console.log(user2)
 }
 else{
-    user.birthday = "10.07.2009"
-    const UuserInfo = JSON.stringify(user)
-    localStorage.setItem('user', UuserInfo)
-    console.log(localStorage.getItem("user"))
+    const user2 = {
+    name: "anya",
+    age: 17,
+    city: "Almaty"
+}
+userrr = JSON.stringify(user2)
+localStorage.setItem('userInfo', userrr)
+localStorage.getItem("user2")
+console.log(userrr)
 
 }
 
@@ -61,8 +70,8 @@ localStorage.setItem("massive", massiveJs)
 console.log(localStorage.getItem("massive"))
 
 //zadanie 8
-localStorage.getItem("massive")
-massive[2].completed = true
-newMassive = JSON.stringify(massive)
+let getMassive = JSON.parse(localStorage.getItem("massive"))
+getMassive[2].completed = true
+newMassive = JSON.stringify(getMassive)
 localStorage.setItem("massive", newMassive)
 console.log(localStorage.getItem("massive"))
